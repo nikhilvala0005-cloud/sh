@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:20px;
+    line-height:1.8;
+}
+
+header{
+    text-align:center;
+}
+
+img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #00bcd4;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#00e5ff;
+    font-size:40px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#7fe7ff;
+    margin:20px 0 10px;
+}
+
+p{
+    margin-bottom:12px;
+}
+
+hr{
+    margin:25px 0;
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+nav{
+    text-align:center;
+    margin:20px 0;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#00bcd4;
+    padding:10px 18px;
+    border-radius:5px;
+    margin:5px;
+    display:inline-block;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#0097a7;
+}
+
+form{
+    width:70%;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:10px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:2px solid #00bcd4;
+    border-radius:5px;
+    font-size:16px;
+    outline:none;
+    margin-top:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    margin-right:5px;
+}
+
+button{
+    background:#00bcd4;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size:16px;
+    margin:10px;
+}
+
+button:hover{
+    background:#0097a7;
+}
+
+a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+img{
+    width:120px;
+    height:120px;
+}
+
+h1{
+    font-size:32px;
+}
+
+form{
+    width:100%;
+    padding:20px;
+}
+
+button{
+    width:100%;
+    margin:10px 0;
+}
+
+}

@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:20px;
+    line-height:1.8;
+}
+
+center{
+    text-align:center;
+}
+
+img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:4px solid #00e5ff;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#00e5ff;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+h3{
+    color:#7fe7ff;
+    margin-bottom:10px;
+}
+
+hr{
+    border:1px solid rgba(255,255,255,0.25);
+    margin:25px 0;
+}
+
+form{
+    width:65%;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:12px;
+    font-size:17px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    border:2px solid #00bcd4;
+    border-radius:6px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+    margin-right:5px;
+}
+
+button{
+    background:#00bcd4;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    margin:10px;
+}
+
+a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+footer,
+small{
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+form{
+    width:100%;
+}
+
+img{
+    width:120px;
+    height:120px;
+}
+
+h1{
+    font-size:32px;
+}
+
+table,
+tr,
+td{
+    display:block;
+    width:100%;
+}
+
+button{
+    width:100%;
+    margin:10px 0;
+}
+
+}

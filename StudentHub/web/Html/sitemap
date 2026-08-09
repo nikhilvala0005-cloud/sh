@@ -1,0 +1,42 @@
+StudentHub Portal
+│
+├── Home
+│
+├── About
+│
+├── Register
+│
+├── Login
+│
+├── Dashboard
+│
+│   ├── Student Profile
+│   │      └── Edit Profile
+│   │
+│   ├── Academic Details
+│   ├── Attendance
+│   ├── Assignments
+│   └── Results
+│
+├── Events
+│   ├── Upcoming Events
+│   ├── Workshops
+│   ├── Hackathons
+│   └── Seminars
+│
+├── Profile
+│   └── Edit Profile
+│
+├── Contact
+│
+├── Admin
+│   ├── Dashboard Overview
+│   ├── Student Management
+│   ├── Course Management
+│   ├── Event Management
+│   ├── Announcements
+│   └── Feedback Management
+│
+├── FAQ
+│
+└── Feedback

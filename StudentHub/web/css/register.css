@@ -87,14 +87,35 @@ input[type="checkbox"]{
 }
 
 button{
-    background:#00bcd4;
+    text-decoration:none;
+
     color:white;
+
+    background:#00bcd4;
+
+    padding:10px 18px;
+
     border:none;
-    padding:12px 20px;
+
     border-radius:8px;
-    font-size:16px;
+
+    margin:5px;
+
+    display:inline-block;
+
     font-weight:bold;
-    margin:10px;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+}
+
+
+button:hover{
+    background:#00e5ff;
+
+    color:#102a32;
+
 }
 
 a{

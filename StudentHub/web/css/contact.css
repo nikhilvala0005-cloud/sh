@@ -6,10 +6,14 @@
 
 body{
     font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background:
+        radial-gradient(circle at 10% 15%,rgba(0,229,255,0.12),transparent 25%),
+        radial-gradient(circle at 90% 85%,rgba(0,188,212,0.10),transparent 25%),
+        linear-gradient(135deg,#071c24,#0d2933,#123b46);
     color:white;
     padding:20px;
-    line-height:1.8;
+    line-height:1.7;
+    min-height:100vh;
 }
 
 header{
@@ -20,13 +24,14 @@ img{
     width:150px;
     height:150px;
     border-radius:50%;
-    border:4px solid #00bcd4;
+    border:4px solid #00e5ff;
     margin-bottom:15px;
+    box-shadow:0 0 22px rgba(0,229,255,0.2);
 }
 
 h1{
     color:#00e5ff;
-    font-size:40px;
+    font-size:42px;
     margin-bottom:10px;
 }
 
@@ -35,137 +40,261 @@ h2{
     margin-bottom:15px;
 }
 
+h3{
+    color:#9beeff;
+    margin-bottom:8px;
+}
+
 p{
-    margin-bottom:10px;
+    font-size:16px;
+    margin-bottom:8px;
 }
 
 hr{
-    margin:25px 0;
-    border:1px solid rgba(255,255,255,0.3);
+    border:0;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,229,255,0.45),
+        transparent
+    );
+    margin:22px 0;
 }
+
+/* NAVIGATION */
 
 nav{
     text-align:center;
-    margin:20px 0;
+    margin:18px 0;
 }
 
 nav a{
     text-decoration:none;
     color:white;
-    background:#00bcd4;
-    padding:10px 18px;
-    border-radius:5px;
-    margin:5px;
+    background:rgba(0,188,212,0.82);
+    padding:9px 17px;
+    border-radius:8px;
+    margin:4px;
     display:inline-block;
     font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
-    background:#0097a7;
+    background:#00e5ff;
+    color:#06232c;
+    transform:translateY(-2px);
 }
+
+/* CONTACT SECTIONS */
 
 section{
-    background:rgba(255,255,255,0.08);
-    padding:20px;
-    border-radius:10px;
-    margin-bottom:25px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.09),
+            rgba(255,255,255,0.035)
+        );
+    padding:24px;
+    border-radius:14px;
+    margin-bottom:22px;
+    border:1px solid rgba(255,255,255,0.10);
+    box-shadow:0 8px 25px rgba(0,0,0,0.18);
 }
 
-form{
-    width:100%;
+/* SECTION HEADINGS */
+
+section h2{
+    border-left:4px solid #00e5ff;
+    padding-left:12px;
 }
 
-label{
-    font-weight:bold;
+/* CONTACT INFORMATION */
+
+section p{
+    margin:8px 0;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea{
-    width:100%;
-    padding:10px;
-    border:2px solid #00bcd4;
-    border-radius:5px;
-    font-size:16px;
-    outline:none;
-    margin-top:5px;
-}
-
-textarea{
-    resize:none;
-}
-
-input[type="submit"],
-input[type="reset"]{
-    background:#00bcd4;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    font-size:16px;
-    margin:10px 5px;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover{
-    background:#0097a7;
-}
-
-ul{
-    margin-left:25px;
-}
-
-li{
-    margin:10px 0;
-}
-
-a{
+section a{
     color:#00e5ff;
     text-decoration:none;
 }
 
-a:hover{
-    text-decoration:underline;
+section a:hover{
+    color:white;
 }
+
+/* FORM */
+
+form{
+    max-width:850px;
+    margin:0 auto;
+}
+
+/* LABELS */
+
+label{
+    display:block;
+    color:#d9faff;
+    font-weight:bold;
+    margin:12px 0 5px;
+}
+
+/* INPUTS */
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:11px 13px;
+    border:1px solid rgba(0,229,255,0.25);
+    border-radius:8px;
+    background:rgba(255,255,255,0.94);
+    color:#17242a;
+    font-family:Arial,sans-serif;
+    font-size:16px;
+    outline:none;
+    transition:0.3s;
+}
+
+input{
+    height:44px;
+}
+
+textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+select{
+    height:44px;
+}
+
+/* INPUT FOCUS */
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#00e5ff;
+    box-shadow:0 0 0 3px rgba(0,229,255,0.12);
+}
+
+/* BUTTONS */
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+    width:auto;
+    height:auto;
+    background:#00bcd4;
+    color:white;
+    border:0;
+    padding:11px 24px;
+    margin:16px 5px 0;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover{
+    background:#00e5ff;
+    color:#06232c;
+    transform:translateY(-2px);
+    box-shadow:0 6px 16px rgba(0,229,255,0.22);
+}
+
+/* FORM BUTTON AREA */
+
+form br + input,
+form br + button{
+    margin-top:14px;
+}
+
+/* FOOTER */
 
 footer{
     text-align:center;
-    background:rgba(255,255,255,0.08);
-    padding:20px;
-    border-radius:10px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,229,255,0.08),
+            rgba(255,255,255,0.04)
+        );
+    padding:22px;
+    border-radius:14px;
+    margin-top:22px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+footer h2{
+    color:#7fe7ff;
 }
 
 footer a{
     color:#00e5ff;
+    text-decoration:none;
 }
+
+footer a:hover{
+    color:white;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-body{
-    padding:15px;
-}
+    body{
+        padding:15px;
+    }
 
-img{
-    width:120px;
-    height:120px;
-}
+    img{
+        width:120px;
+        height:120px;
+    }
 
-h1{
-    font-size:32px;
-}
+    h1{
+        font-size:32px;
+    }
 
-nav a{
-    display:block;
-    width:220px;
-    margin:10px auto;
-}
+    nav a{
+        display:block;
+        width:220px;
+        margin:8px auto;
+    }
 
-input[type="submit"],
-input[type="reset"]{
-    width:100%;
-    margin:10px 0;
-}
+    section{
+        padding:18px;
+    }
 
+    form{
+        width:100%;
+    }
+
+    input,
+    textarea,
+    select{
+        font-size:15px;
+    }
+
+    textarea{
+        min-height:120px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"]{
+        padding:10px 20px;
+    }
+
+    footer{
+        padding:18px 12px;
+    }
 }

@@ -38,19 +38,19 @@ The project focuses on creating a user-friendly digital environment that can be 
 
 ## 🖥️ Pages Included
 
-| Page | Description |
-|------|-------------|
-| Home | Introduction, campus slideshow, announcements and university information |
-| About | Information about StudentHub, mission, services and achievements |
-| Register | Student registration page |
-| Login | Student login page |
-| Dashboard | Attendance, timetable, results and fee information |
-| Events | University events and activities |
-| Profile | Student profile information |
-| Contact | Contact information and administration details |
-| FAQ | Frequently asked questions |
-| Feedback | Student feedback section |
-| Admin | Administrative dashboard and management information |
+| Page           | Description |
+|------          |-------------|
+| Home           | Introduction, campus slideshow, announcements and university information |
+| About          | Information about StudentHub, mission, services and achievements |
+| Register       | Student registration page |
+| Login          | Student login page |
+| Dashboard      | Attendance, timetable, results and fee information |
+| Events         | University events and activities |
+| Profile        | Student profile information |
+| Contact        | Contact information and administration details |
+| FAQ            | Frequently asked questions |
+| Feedback       | Student feedback section |
+| Admin          | Administrative dashboard and management information |
 
 ---
 
